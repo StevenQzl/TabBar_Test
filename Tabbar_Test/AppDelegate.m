@@ -9,12 +9,22 @@
 #import "AppDelegate.h"
 #import "TEUITabBarController.h"
 @interface AppDelegate ()
-
+@property (strong, nonatomic)TEUITabBarController *tabbarCtr;
 @end
 
 @implementation AppDelegate
 
-
+- (void)tabbarHidden:(BOOL)hidden
+{
+    CGFloat tabbarHight = hidden?-83:0;
+    NSLog(@"---=%f",tabbarHight);
+    CGRect rectWindow = self.window.frame;
+    CGRect rectTabBar = self.tabbarCtr.tabBar.frame;
+    rectTabBar.size.height = tabbarHight;
+    rectTabBar.origin.y = CGRectGetHeight(rectWindow) - tabbarHight;
+    self.tabbarCtr.tabBar.frame = rectTabBar;
+    self.tabbarCtr.selectedViewController.view.frame = CGRectMake(0, 0, CGRectGetWidth(rectWindow), CGRectGetHeight(rectTabBar));
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];

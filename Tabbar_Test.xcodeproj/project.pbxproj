@@ -20,6 +20,9 @@
 		21E4794D20EDA5B600C2FA64 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E4794C20EDA5B600C2FA64 /* HomeViewController.m */; };
 		21E4795020EDA5C200C2FA64 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E4794F20EDA5C200C2FA64 /* DiscoverViewController.m */; };
 		21E4795320EDA5CD00C2FA64 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E4795220EDA5CD00C2FA64 /* MineViewController.m */; };
+		21E4795620EDBEEA00C2FA64 /* SEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E4795520EDBEEA00C2FA64 /* SEViewController.m */; };
+		21E4795920EDC03800C2FA64 /* SETableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E4795820EDC03800C2FA64 /* SETableViewCell.m */; };
+		21E4795C20EDF45900C2FA64 /* SETextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E4795B20EDF45900C2FA64 /* SETextViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,12 @@
 		21E4794F20EDA5C200C2FA64 /* DiscoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
 		21E4795120EDA5CD00C2FA64 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		21E4795220EDA5CD00C2FA64 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		21E4795420EDBEEA00C2FA64 /* SEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SEViewController.h; sourceTree = "<group>"; };
+		21E4795520EDBEEA00C2FA64 /* SEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SEViewController.m; sourceTree = "<group>"; };
+		21E4795720EDC03800C2FA64 /* SETableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SETableViewCell.h; sourceTree = "<group>"; };
+		21E4795820EDC03800C2FA64 /* SETableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SETableViewCell.m; sourceTree = "<group>"; };
+		21E4795A20EDF45900C2FA64 /* SETextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SETextViewController.h; sourceTree = "<group>"; };
+		21E4795B20EDF45900C2FA64 /* SETextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SETextViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +137,12 @@
 				21E4794C20EDA5B600C2FA64 /* HomeViewController.m */,
 				21E4794E20EDA5C200C2FA64 /* DiscoverViewController.h */,
 				21E4794F20EDA5C200C2FA64 /* DiscoverViewController.m */,
+				21E4795420EDBEEA00C2FA64 /* SEViewController.h */,
+				21E4795520EDBEEA00C2FA64 /* SEViewController.m */,
+				21E4795A20EDF45900C2FA64 /* SETextViewController.h */,
+				21E4795B20EDF45900C2FA64 /* SETextViewController.m */,
+				21E4795720EDC03800C2FA64 /* SETableViewCell.h */,
+				21E4795820EDC03800C2FA64 /* SETableViewCell.m */,
 				21E4795120EDA5CD00C2FA64 /* MineViewController.h */,
 				21E4795220EDA5CD00C2FA64 /* MineViewController.m */,
 				21E4791320EDA47C00C2FA64 /* Main.storyboard */,
@@ -288,12 +303,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				21E4791D20EDA47E00C2FA64 /* main.m in Sources */,
+				21E4795C20EDF45900C2FA64 /* SETextViewController.m in Sources */,
 				21E4794A20EDA5A200C2FA64 /* BaseViewController.m in Sources */,
 				21E4795020EDA5C200C2FA64 /* DiscoverViewController.m in Sources */,
 				21E4794420EDA53200C2FA64 /* TENavigationController.m in Sources */,
 				21E4790F20EDA47C00C2FA64 /* AppDelegate.m in Sources */,
 				21E4794720EDA58900C2FA64 /* TEUITabBarController.m in Sources */,
 				21E4794D20EDA5B600C2FA64 /* HomeViewController.m in Sources */,
+				21E4795920EDC03800C2FA64 /* SETableViewCell.m in Sources */,
+				21E4795620EDBEEA00C2FA64 /* SEViewController.m in Sources */,
 				21E4795320EDA5CD00C2FA64 /* MineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +484,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6M26YT55JE;
 				INFOPLIST_FILE = Tabbar_Test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -483,6 +502,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6M26YT55JE;
 				INFOPLIST_FILE = Tabbar_Test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
